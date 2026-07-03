@@ -42,7 +42,7 @@ function ServiceInfo({ type }) {
         <div className={styles.infoLi}>
           <Image
             className={styles.imgBorder}
-            src="/images/engineer.jpg"
+            src="/images/engineer.JPG"
             alt="Logo"
             width={100}
             height={105}

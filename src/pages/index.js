@@ -6,11 +6,11 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 export default function Home() {
-   const {status}=useSession()
-   const router = useRouter();
-    useEffect(()=>{
-       if (status === "authenticated") router.replace("/dashboard");
-    },[status])
+  const { status } = useSession();
+  const router = useRouter();
+  useEffect(() => {
+    if (status === "authenticated") router.replace("/dashboard");
+  }, [status]);
   const services = [
     {
       title: "تامین تجهیزات",
@@ -33,13 +33,13 @@ export default function Home() {
     {
       title: "خدمات و پشتیبانی",
       desc: "ارائه خدمات مهندسی و پشتیبانی در تمامی مراحل پروژه",
-      icon: "/images/afterSales.png",
+      icon: "/images/afterSales.PNG",
       link: "/services/afterSale",
     },
   ];
   return (
     <>
-     <Head>
+      <Head>
         <title>شرکت مهندسی دزون | تصفیه آب و فاضلاب</title>
 
         <meta
@@ -47,14 +47,11 @@ export default function Home() {
           content="طراحی، ساخت و تامین تجهیزات تصفیه آب و فاضلاب"
         />
 
-        <meta
-          name="keywords"
-          content="تصفیه آب، تصفیه فاضلاب، تجهیزات تصفیه"
-        />
+        <meta name="keywords" content="تصفیه آب، تصفیه فاضلاب، تجهیزات تصفیه" />
       </Head>
       <div className="image-wrapper">
         <Image
-          src="/images/watertraeat.png"
+          src="/images/watertraeat.PNG"
           alt="Wastewater treatment"
           width={1145}
           height={400}

@@ -8,7 +8,7 @@ function Waterpurification() {
     <div className={styles.infoLi}>
       <Image
         className={styles.imgBorder}
-        src="/images/water.jpg"
+        src="/images/water.JPG"
         alt="Logo"
         width={105}
         height={105}

@@ -150,7 +150,7 @@ function Services() {
             <Link href="/services/engineerS" className={styles.service}>
               <Image
                 className={styles.imgBorder}
-                src="/images/engineer.jpg"
+                src="/images/engineer.JPG"
                 alt="Logo"
                 width={100}
                 height={105}
@@ -178,7 +178,7 @@ function Services() {
             <Link href="/services/waterpurification" className={styles.service}>
               <Image
                 className={styles.imgBorder}
-                src="/images/water.jpg"
+                src="/images/water.JPG"
                 alt="Logo"
                 width={105}
                 height={105}
@@ -202,7 +202,7 @@ function Services() {
             <Link href="/services/operation" className={styles.service}>
               <Image
                 className={styles.imgBorder}
-                src="/images/operation.jpg"
+                src="/images/operation.JPG"
                 alt="Logo"
                 width={105}
                 height={105}
@@ -213,7 +213,7 @@ function Services() {
             <Link href="/services/afterSale" className={styles.service}>
               <Image
                 className={styles.imgBorder}
-                src="/images/afterSale.png"
+                src="/images/afterSalee.png"
                 alt="Logo"
                 width={105}
                 height={105}
