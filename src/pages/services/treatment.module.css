@@ -1,0 +1,200 @@
+.pageHeight{
+  height: auto;
+  min-width: 100vh;
+  width: auto;
+}
+.aboutus{
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+   background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه public */
+  background-size: cover;        /* عکس کل صفحه را پوشش می‌دهد */
+  background-position: center;   /* وسط‌چین */
+  background-repeat: no-repeat;  /* تکرار نشود */
+  height: 100vh;                 /* ارتفاع کل صفحه */
+  width: 100%;
+  color: black;
+
+}
+.aboutus h3{
+padding-right: 20px;
+ color: black;
+}
+.aboutus p {
+  max-width: 95%;
+  margin-left: 50px;
+   margin-top: 10px;
+  margin-right: 40px;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.balanceDiv{
+  /* height: 400px; */
+  margin-top: 0px;
+   font-family:'B Nazanin';
+     font-size: large;
+  display: flex;
+  flex-wrap: wrap;        /* اجازه رفتن به خط بعد */
+   gap: 8px 40px;              /* فاصله بین آیتم‌ها */
+  justify-content:center; 
+  /* margin-right: 100px; */
+  /* margin-left: 100px; */
+  
+}
+.picbackg{
+
+  display: grid;
+  grid-auto-flow: column;
+  gap: 40px;
+  /* justify-content: center;
+  align-items: center; */
+ 
+background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه public */
+    background-size: cover;        /* عکس کل صفحه را پوشش می‌دهد */
+  background-position: center;   /* وسط‌چین */
+  background-repeat: no-repeat;  /* تکرار نشود */
+  /* height: 100vh;                 /* ارتفاع کل صفحه */
+  /* width: 100%; */ 
+}
+.textServices{
+  /* display: flex; */
+  /* height: 800px; */
+   font-family:'B Nazanin';
+  font-size: 1.2rem;
+  padding: 10px;
+
+}
+.textServices p {
+  font-size: 1.1rem;
+}
+.textServices h2{
+  font-size: 1rem;
+  color: #000;
+}
+.smallImage{
+     border-radius: 50%;
+  border: 8px solid #0c388d;
+}
+ .imgBorder {
+  border-radius: 50%;
+  border: 8px solid #0c388d;
+}
+.infoLi{
+   background-image: url('/images/backtreat.png'); 
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;  
+  color: rgb(254, 251, 251);
+  position:relative;
+  /* padding-top:30px; */
+  /* margin-right: 30px; */
+  margin-top: 10px;
+  padding-bottom:30px;
+  text-align: right;
+  font-size: 1rem;
+  height: auto;
+  /* padding-right: 40px; */
+  margin-right: 40px;
+  margin-left:  40px;
+  justify-content: center;
+  text-align: justify;
+}
+.infoLi p{
+    font-size: 1rem;
+  }
+  .infoLi h3{
+    padding-right:30px;
+    color: #0c388d;
+  }
+
+.balanceItem {
+  height: auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+ 
+}
+.balanceItem div{
+  justify-content: center;
+  align-items: center;
+}
+.balanceItem p{
+  background-color: rgba(155, 215, 230, 0.837);
+  border-radius: 15px;
+  width: 150px;
+  text-align: center;
+}
+.balanceItem button{
+ font-family: 'B Nazanin';
+  font-size: 1rem;
+  background-color: #F4F5FA;
+  border: none;
+}
+
+/* آیتم داخلی برای وسط نگه داشتن عکس و دکمه */
+.balanceItem > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.alignBack {
+  color: black;
+  /* display: flex; */
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.alignBack h2 {
+   font-size: 1.2rem;
+   color: #1d1c1c;
+}
+.alignBack p{
+  
+   font-size: 1rem;
+}
+.boldLi{
+  /* list-style-type:""; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  
+}
+/* .boldLi ::-moz-list-bullet{
+  font-size: 28px;
+} */
+/* li.boldLi::before{
+content: " ⚫   ";
+font-weight: bold;
+font-size: 0.5rem;
+  color: #000;
+} */
+.anotherboldLi{
+ list-style-type: square;
+font-weight: bold;
+/* font-size: 0.5rem; */
+  color: #000;
+}
+.otherLi{
+  list-style-type:"-  ";
+  font-size: 16px;
+  font-weight: bold;
+  content: "- ";
+  color: #3e3e3e;
+}
+ @media (max-width: 768px){
+  .balanceDiv{
+    display:inline;
+  }
+  .smallImage{
+    width: 100px;
+    height: 100px;
+  } 
+}

@@ -1,0 +1,184 @@
+.projectP {
+  /* font-family: "B Nazanin" !important; */
+  color: black;
+  margin: 0 0 4px 0; /* فاصلهٔ کم با خط بعد */
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* هر آیتم پایین تر کمی جلوتر از ssss: قرار بگیرد */
+.divLink {
+ display: inline-flex !important; /* محتوا حتماً در یک خط */
+  flex-direction: row !important;
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px;
+  margin-bottom: 4px;
+  padding-top: 10px;
+  white-space: nowrap; /* جلوگیری از خط‌بعدی */
+  font-size: 1.1rem;
+  /* padding-bottom: 20px; */
+}
+
+/* نقطه‌ی ◾ */
+.divLink p {
+  margin: 0;
+}
+
+.projectLink{
+text-decoration: none;
+  color: #12115d;
+  /* color: #0070f3; */
+}
+.projectLink:hover {
+  text-decoration: underline;
+}
+.suppBack{
+  background-image: url('/images/backsuppAlll.png'); 
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 400px;
+}
+.suppalign{
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.rightSection {
+   
+    background-image: url('/images/suppBackk.png'); 
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;  
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  width: 100%;
+  /* align-items: center; */
+  gap: 10px;
+    /* flex-wrap: nowrap;     جلوگیری از رفتن به خط بعد */
+}
+.rightSection img {
+  flex-shrink: 0;
+}
+/* .projectAlign {
+  display: flex;
+  width:  100%;
+   flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+} */
+.projectAlign {
+  display: flex;
+   flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+.profileData {
+  
+  margin-top: 20px;
+}
+
+.profileData div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileData span {
+  color: #7f7e86;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.profileData p {
+  font-size: 1.2rem;
+  color: #494a52;
+  font-weight: 500;
+}
+.profileData-link{
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #3f79f7;
+border-radius: 5px;
+}
+.ProjIdDiv{
+  display: "flex";
+   gap: 15px;
+}
+.ProjIdDiv h3{
+  color: black;
+}
+.ProjIdDiv p{
+  color: rgb(37, 36, 36);
+    font-size: 1.1rem;
+    font-weight: normal;
+
+}
+.centerItems{
+  margin-top: 20px;
+  
+  margin: 0 0;
+  width: 80%;
+  overflow-x: auto;
+  /* justify-content:space-between; */
+   align-items: center;
+    padding-right:  40px;
+    /* gap:40px; */
+}
+.tableLine{
+  margin-right: 10%;
+    /* width: 100%; */
+    /* padding-right: 20px; */
+    min-width: 450px;
+    color: rgb(37, 36, 36);
+    border: 1px solid;
+    border-collapse: collapse;
+     font-size: 1rem;
+    font-weight: normal;
+
+}
+.tableLine tr{
+  color: black;
+}
+.tableLine th {
+  background-color:  #ddd9c3;
+}
+.tableLine td{
+  font-size: 16px;
+  font-weight: normal;
+}
+.tableLine th,
+.tableLine td{
+    border: 1px solid;
+    padding: 8px 12px;
+    /* width: 200px; */
+}
+.tdLeft{
+  text-align: left;
+  font-family: calibri !important;
+}
+@media (max-width:768px){
+  .projectP{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .tableLine{
+    margin-right: 0px;
+    min-width: 300px;
+    font-size: 0.9rem;
+  }
+  .projectAlign{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .projectLink{
+    font-size: 1rem;
+  }
+}

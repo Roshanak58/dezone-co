@@ -1,0 +1,156 @@
+.header {
+  width: 100%;
+  min-height: 110px;
+  position: relative;
+  direction: rtl;
+}
+
+.centerSection {
+  
+
+ width: 90%;
+  height: 90px;
+
+  background-image: url('/images/headerbackC.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin: auto;
+  /* background-image: url('/images/headerback1.png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+.alignHeader{
+  display: flex;
+}
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 0;
+    flex-wrap: nowrap;     /* جلوگیری از رفتن به خط بعد */
+}
+.rightSection img {
+  flex-shrink: 0;
+}
+.siteInfo {
+  min-width: 0;
+  font-size: 14px;
+}
+.siteInfo p{
+    direction: ltr;
+}
+
+.leftSection{
+    /* direction: ltr; */
+    /* margin-left: 25px; */
+    left: 10px;
+    font-size: small;
+}
+.mobileHeader {
+  display: none;
+}
+
+ .mobileLeft {
+    width: max-content;
+    height: 90px;
+   
+  }
+  .Breadcrumb{
+    padding-top: 0px;
+    height: 40px;
+    background-color: rgba(175, 193, 212, 0.196);
+    border-radius: 10px;
+  }
+@media (max-width: 950px) {
+.header{
+        height: 90px;
+ }
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+    flex-wrap: nowrap;     /* جلوگیری از رفتن به خط بعد */
+}
+.rightSection img {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.siteInfo {
+  font-size: x-small;
+}
+.leftSection{
+    direction: ltr;
+    padding-left: 5px;
+    font-size: x-small;
+} 
+.centerSection {
+  justify-content: flex-start;
+  z-index: 999;
+}
+}
+@media (max-width: 768px) {
+  /* .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    border-radius: 0;
+  } */
+ 
+  /* مخفی کردن بخش‌های دسکتاپ */
+  /* .rightSection,
+  .centerSection,
+  .leftSection {
+    display: none;
+  } */
+ 
+  /* نمایش بخش موبایل */
+  /* .mobileHeader {
+    margin-top: 0;
+    margin-left: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  } */
+ .alignRight{
+display: flex;
+  align-items: center;
+  gap: 5px;
+    flex-wrap: nowrap; 
+ }
+  .mobileRight {
+     
+    text-align: right;
+    flex: 1;
+  }
+ 
+  .mobileRight h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+  }
+ 
+  .mobileText {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+ 
+  .mobileText p {
+    margin: 2px 0;
+    direction: ltr;
+  }
+ 
+  .mobileLeft {
+    
+    display: flex;
+    align-items:center;
+  }
+}
+

@@ -1,0 +1,32 @@
+.breadcrumb {
+  /* background-color: azure; */
+color:  #0c388d ;
+  margin-right: 15px;
+  direction: rtl;
+  /* margin-right: 30px; */
+}
+.breadcrumb link{
+  
+  /* font-weight: 800; */
+}
+
+.breadcrumb a {
+  font-size: 14px !important;
+  color:  #0c388d ;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .sep {
+  margin: 0 5px;
+  color: #666;
+}
+
+.breadcrumb .current {
+  font-weight: bold;
+  color: #222;
+}

@@ -1,0 +1,116 @@
+.container{
+    
+margin-top: 100px;
+ display: flex;
+  min-height: calc(50vh - 50px);
+}
+
+.aside {
+
+  background-color: #fff;
+  width: 150px;
+  position: relative;
+  bottom: 80px;
+  border-top-left-radius: 20px;
+  color: #7f7e86;
+  padding: 30px 0 0 30px;
+  /* gap: 20px; */
+}
+.asideUl{
+  margin-right: 30px;
+    font-size: 1rem;
+
+}
+.aside p {
+  color: #494a52;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* .aside li {
+  
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: F4F5FA;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+} */
+
+.aside li a {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.li {
+  list-style: none;
+
+}
+.liSub{
+    font-size:1rem;
+}
+
+.section {
+  background-color: #f4f5fa;
+  flex-grow: 1;
+   background-image: url('/images/watertraeat.png'); 
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat; 
+  /* padding: 10px; */
+  /* width: 100%; */
+}
+/* .subMenu {
+   font-size:larger !important;
+  display: none; 
+} */
+
+.subMenu.visible {
+  display: block; /* وقتی کلاس visible اضافه شود، نمایش داده می‌شود */
+}
+/* styles.module.css */
+
+/* 1. نکته اول: li خود را relative کنید */
+.aside li {
+   position: relative;         /* برای قرارگیری صحیح زیر‑منو */
+  list-style: none;          /* اگر می‌خواهید نقطه‌ای نداشته باشد */
+}
+
+/* 2. زیر‑منو را absolute کنید */
+.subMenu {
+  position: absolute;        /* به‌جای relative */
+  right: 10px;
+  left: 0;                   /* در سمت چپ عنصر والد */
+  top: 100%;                 /* دقیقاً زیر عنصر والد */
+  background: #fff;          /* رنگ پس‌زمینه (اختیاری) */
+  min-width:120px;          /* عرض دلخواه */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* جلوهٔ سایه (اختیاری) */
+  padding: 8px 0;            /* فاصله داخلی */
+  border-radius: 4px;        /* گوشه‌های گرد (اختیاری) */
+  z-index: 10; 
+    top: calc(100% + 4px);   /* ۴px فاصله‌ی اضافه */
+    /* یا */
+    transform: translateY(4px);              /* برای بالا بودن روی محتوا */
+}
+
+/* 3. برای بهبود ظاهر، می‌توانید hover یا active را مدیریت کنید */
+.aside li:hover > .subMenu,
+.aside li:focus-within > .subMenu {
+  display: block;            /* اگر در CSS display: none بود */
+}
+
+/* 4. آیتم‌های زیر‑منو */
+.subMenu li {
+  padding: 8px 16px;
+}
+
+.subMenu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.subMenu li a:hover {
+  background: #f0f0f0;
+}

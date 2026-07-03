@@ -1,0 +1,81 @@
+.textServices{
+   /* font-family:'B Nazanin'; */
+  font-size: 1.3rem;
+  padding: 30px;
+   background-image: url('/images/backg3.png'); 
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;  
+
+}
+.textServices p {
+  font-size: 1.3rem;
+}
+.textServices h2{
+  font-size: 1rem;
+  color: #000;
+}
+.smallImage{
+     border-radius: 50%;
+  border: 8px solid #0c388d;
+}
+ .imgBorder {
+  border-radius: 50%;
+  border: 5px solid #0c388d;
+}
+.infoLi{
+  
+  position:relative;
+  /* padding-top:30px; */
+  margin-right: 30px;
+  margin-top: 10px;
+  padding-bottom:30px;
+  text-align: right;
+  font-size: 1.2rem;
+  height: auto;
+}
+.infoLi h3{
+  color: black;
+}
+.infoLi p{
+  color:#242323 ;
+    font-size: 1.2rem;
+  }
+  .gridLi{
+    color:#242323 ;
+    font-size: 1.2rem;
+  }
+.balanceItem {
+  height: auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.balanceItem button{
+ font-family: 'B Nazanin';
+  font-size: 1rem;
+  background-color: #F4F5FA;
+  border: none;
+}
+
+/* آیتم داخلی برای وسط نگه داشتن عکس و دکمه */
+.balanceItem > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+    .smallImage {        
+        width: 80px;
+        height: 80px; 
+    }
+    .balanceItem {
+    grid-auto-flow: row; /* تک ستونه شود */
+    gap: 20px; /* فاصله کمتر برای موبایل */
+  }
+
+}

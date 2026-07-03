@@ -1,0 +1,49 @@
+.Certificatecontainer{
+ position: fixed;
+ 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+
+
+}
+
+.CertificateClose {
+font: 1em sans-serif;
+position: sticky;      /* مهم: همیشه دیده می‌شود */
+  top: 0;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+
+
+}
+.CertificateShow {
+ width: 450px;
+ max-height: 90vh; 
+  background-color: #18181ce6;
+  border: 2px solid #404042;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+
+ /* overflow-y: auto;      */
+
+  
+}
+.CertificateShow img{
+  max-width: 100%;   
+  max-height: 80vh;   /* خیلی مهم: عکس را در ارتفاع صفحه جا می‌دهد */
+  object-fit: contain;
+  border-radius: 10px;
+}

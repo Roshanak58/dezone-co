@@ -1,0 +1,83 @@
+.about{
+   position:relative;
+  padding-top:30px;
+  margin-right: 100px;
+  margin-top: 30px;
+  text-align: right;
+  font-size: 1.4rem;
+  height: auto;
+  padding-bottom: 50px;
+
+  /* margin-bottom: 30px; */
+
+}
+.aboutH3{
+  color: black;
+    font-size: 1.2rem;
+}
+.textClass{
+  padding-top: 5px;
+  color: black;
+    max-width: 95%;
+  margin-left: 50px;
+   margin-top: 10px;
+  margin-right: 40px;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1rem;font-size: large;
+}
+.hr{
+    color: #fff;
+    border: none;
+}
+.clsImage{
+  margin-right: 25%;
+}
+
+.gridLi{
+  padding-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* دو ستون */
+  gap: 2rem; /* فاصله بین ستون‌ها */
+  justify-content: center; /* قرارگیری در وسط صفحه */
+  align-items: start; /* ترازبندی عمودی */
+  margin: 0 auto; /* مرکز کردن کل بلوک */
+  text-align: right; /* جهت چینش آیتم‌ها */
+  padding-bottom: 30px;
+}
+.gridLi li{
+  font-size: 1.1rem;
+}
+/* .gridLi li::before {
+  content: "- ";
+  font-weight: bold;
+  color: #000;
+} */
+ @media (max-width: 768px) {
+    .smallImage {
+        
+            width: 100px;
+            height: 100px;
+        
+        
+    }
+      .gridLi li{
+        color: rgb(32, 31, 31);
+    font-size: 1rem;
+  }
+  .aboutH3{
+    color: black;
+      font-size: 1.1rem;
+      padding-bottom: 10px;
+  }
+  .about{
+  padding-top:20px;
+  margin-right: 40px;
+  }
+  .clsImage{
+    width:90%;
+            height:100%;
+    margin-right: 0;
+    margin-left: 40px;
+  }
+ }

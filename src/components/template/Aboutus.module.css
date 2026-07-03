@@ -1,0 +1,153 @@
+.balanceHeight{
+  min-height: 900px;
+
+}
+.balanceDiv{
+  padding-top:50px;
+  padding-right: 0px;
+  font-family:'B Vazirmatn';
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;        /* اجازه رفتن به خط بعد */
+  gap:50px !important;              /* فاصله بین آیتم‌ها */
+  justify-content:center; 
+  height: auto;
+}
+.service {
+  position: relative;
+  /* width: 120px; */
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  flex-direction: column;
+  gap: 10px !important;
+}
+.serviceP{
+  color: #215272;
+  /* width: 180px; */
+  border-radius: 10px;
+  background-color: rgba(240, 241, 241, 0.825);
+  font-size: 1rem;
+  margin-top: 6px;   /* فاصله زیر عکس */
+  text-align: center;
+  
+}
+
+.serviceImg {
+  border-radius: 50% ;
+  transition: transform 0.3s ease;
+}
+.overlayText {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:#fbfcfc !important;;
+  color: #0c388d;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* کلیک از خود لینک می‌گذره */
+}
+.service:hover .overlayText,
+.service:active .overlayText,
+.service:focus .overlayText {
+  opacity: 1;
+}
+
+.service:hover .serviceImg,
+.service:active .serviceImg,
+.service:focus .serviceImg {
+  transform: scale(1.15);
+}
+
+
+
+
+
+/* .service.inactive {
+  opacity: 0.8;
+}
+
+.service.active {
+  opacity: 1;
+} */
+
+ .img-border {
+  border-radius: 50%;
+  border: 8px solid #0c388d;
+}
+
+.aboutLink{
+   /* white-space: nowrap; */
+  /* font-family:'B Nazanin'; */
+  background-color: none;
+  color: #000;
+  margin-top: 10px; /* فاصله از عکس */
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .balanceDiv{
+     margin-top: 0px;
+  font-family:'B Vazirmatn';
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;        /* اجازه رفتن به خط بعد */
+  gap: 2px 2px;              /* فاصله بین آیتم‌ها */
+  justify-content:center; 
+  height: auto;
+}
+
+  /* .service img{
+    width: 90px;
+    height: auto;
+  } */
+ .serviceP{
+  font-size: 10px !important;
+  }
+  .overlayText {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+     .infoLi p{
+    font-size: 1rem;
+  }
+  .balanceHeight{
+    min-height: 700px;
+  }
+  .aboutLink{
+    display: none;
+    font-size: 0.9rem;
+  }
+  .textClass{
+    font-size: small;
+  }
+  .service:hover img {
+    transform: scale(1.15);
+  }
+
+  .service:hover .aboutLink {
+    display: block;
+    margin-top: 6px;
+  }
+   .service:focus-within img {
+    transform: scale(1.15);
+  }
+
+  .service:focus-within .aboutLink {
+    display: block;
+  }
+
+}
