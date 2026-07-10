@@ -33,7 +33,7 @@ export default function Home() {
     {
       title: "خدمات و پشتیبانی",
       desc: "ارائه خدمات مهندسی و پشتیبانی در تمامی مراحل پروژه",
-      icon: "/images/afterSales.PNG",
+      icon: "/images/afterSales.png",
       link: "/services/afterSale",
     },
   ];

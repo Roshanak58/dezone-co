@@ -8,7 +8,7 @@ function Waterpurification() {
     <div className={styles.infoLi}>
       <Image
         className={styles.imgBorder}
-        src="/images/water.JPG"
+        src="/images/water.jpg"
         alt="Logo"
         width={105}
         height={105}
@@ -26,7 +26,7 @@ function Waterpurification() {
           <Link href="/services/waterpurification/DrinkingWaterPurification">
             <Image
               className={styles.imgBorder}
-              src="/images/water.png"
+              src="/images/waterr.jpg"
               alt="Logo"
               width={100}
               height={100}
