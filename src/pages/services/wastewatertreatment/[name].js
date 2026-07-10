@@ -23,7 +23,7 @@ function Index() {
               </div>
               <div className={styles.balanceDiv}>
                 <div>
-                  <ul>
+                  <ul className={styles.ulHover}>
                     <li className={styles.boldLi}> تصفیه فیزیکی :</li>
                     <li className={styles.otherLi}>واحد آشغالگیری </li>
                     <li className={styles.otherLi}>
@@ -31,7 +31,7 @@ function Index() {
                     </li>
                     <li className={styles.otherLi}>ته نشینی مقدماتی </li>
                   </ul>
-                  <ul>
+                  <ul className={styles.ulHover}>
                     <li className={styles.boldLi}>تصفیه شیمیایی:</li>
                     <li className={styles.otherLi}> انعقاد </li>
                     <li className={styles.otherLi}> ته نشینی </li>
@@ -40,7 +40,7 @@ function Index() {
                   </ul>
                 </div>
                 <div>
-                  <ul>
+                  <ul className={styles.ulHover}>
                     <li className={styles.boldLi}> تصفیه بیولوژیکی :</li>
                     <li className={styles.otherLi}>تصفیه به روش رشد معلق</li>
                     <li className={styles.otherLi}>تصفیه به روش رشد چسبیده</li>
@@ -55,14 +55,14 @@ function Index() {
                   </ul>
                 </div>
                 <div>
-                  <ul>
+                  <ul className={styles.ulHover}>
                     <li className={styles.boldLi}>تصفیه پیشرفته:</li>
                     <li className={styles.otherLi}> فیلتراسیون </li>
                     <li className={styles.otherLi}> جذب سطحی </li>
                     <li className={styles.otherLi}> عریان سازی </li>
                     <li className={styles.otherLi}> تقطیر </li>
                   </ul>
-                  <ul>
+                  <ul className={styles.ulHover}>
                     <li className={styles.boldLi}> گند زدایی:</li>
                     <li className={styles.otherLi}> گند زدایی با کلر </li>
                     <li className={styles.otherLi}> گند زدایی با ازن </li>
@@ -74,7 +74,7 @@ function Index() {
                   </ul>
                 </div>
                 <div>
-                  <ul>
+                  <ul className={styles.ulHover}>
                     <li className={styles.boldLi}> تصفیه لجن بیولوژیکی :</li>
                     <li className={styles.otherLi}>تغلیظ</li>
                     <li className={styles.otherLi}>تثبیت</li>

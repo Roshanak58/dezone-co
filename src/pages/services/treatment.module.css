@@ -123,9 +123,10 @@ background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه pu
 .balanceItem div{
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .balanceItem p{
-  background-color: rgba(155, 215, 230, 0.837);
+  background-color: #d2e3f6;
   border-radius: 15px;
   width: 150px;
   text-align: center;
@@ -189,6 +190,11 @@ font-weight: bold;
   content: "- ";
   color: #3e3e3e;
 }
+ .ulHover:hover{
+  transform: scale(1.2);
+  background-color:#d2e3f650;
+  border-radius: 10px;
+ }
  @media (max-width: 768px){
   .balanceDiv{
     display:inline;

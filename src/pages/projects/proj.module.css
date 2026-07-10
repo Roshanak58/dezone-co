@@ -118,6 +118,7 @@ border-radius: 5px;
   flex-wrap: nowrap;      /* جلوگیری از رفتن به خط بعد */
   gap: 8px;               /* فاصله بین المان‌ها */
   margin-right: 20px;
+  font-size: 1.3rem;
 }
 
 /* لینک */

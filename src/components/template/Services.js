@@ -150,7 +150,7 @@ function Services() {
             <Link href="/services/engineerS" className={styles.service}>
               <Image
                 className={styles.imgBorder}
-                src="/images/engineer.JPG"
+                src="/images/engineer.jpg"
                 alt="Logo"
                 width={100}
                 height={105}

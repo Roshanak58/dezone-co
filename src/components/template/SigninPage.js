@@ -42,7 +42,8 @@ function SigninPage(){
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={loginHandler}>ورود</button>
+      <button >ورود</button>
+      {/* <button onClick={loginHandler}>ورود</button> */}
       {/* <div>
         <p>ثبت نام کاربر جدید : </p>
         <Link href="/signup">ثبت نام </Link>

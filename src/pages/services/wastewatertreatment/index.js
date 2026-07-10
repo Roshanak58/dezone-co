@@ -20,7 +20,7 @@ function Wastewatertreatment() {
         خانه های کوچک و بزرگ، صنعتی و شهری دسته بندی می شود.{" "}
       </p>
       <div className={styles.balanceItem}>
-        <div>
+        <div >
           <Link href="/services/wastewatertreatment/urbanWasteWater">
           <Image
             className={styles.imgBorder}
